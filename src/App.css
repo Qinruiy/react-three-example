@@ -1,0 +1,37 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-content {
+  align-self: center;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  word-break: break-all;
+}
+
+button {
+  font-size: calc(10px + 2vmin);
+}
+
+.App-Canvas {
+  align-self: center;
+}
+
+.stats {
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+}

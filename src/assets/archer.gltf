@@ -1,0 +1,333 @@
+{
+  "accessors": [
+    {
+      "componentType": 5125,
+      "count": 330120,
+      "max": [
+        65531
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 65762,
+      "max": [
+        1.007842158803753,
+        1.007862603196911,
+        1.007956778535656
+      ],
+      "min": [
+        -1.0078377480600393,
+        -1.0078173036668814,
+        -1.0077231283281363
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 65762,
+      "max": [
+        2.226643679371448,
+        3.6535704954694292,
+        2.5686834551499533
+      ],
+      "min": [
+        -4.8315625883744415,
+        -7.690418312709158,
+        -10.139809200923269
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5125,
+      "count": 311253,
+      "max": [
+        65532
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 65669,
+      "max": [
+        1.0078095006007772,
+        1.0078423427600485,
+        1.007840316202126
+      ],
+      "min": [
+        -1.0078410910625084,
+        -1.0078082489032372,
+        -1.0078102754611595
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 65669,
+      "max": [
+        2.4051963515437746,
+        3.9599076586929716,
+        3.328930893466131
+      ],
+      "min": [
+        -5.047844925448553,
+        -7.690900364443914,
+        -10.367285767123358
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5125,
+      "count": 19518,
+      "max": [
+        13941
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 14131,
+      "max": [
+        1.0078083636713964,
+        1.007835543389414,
+        1.0078114631129247
+      ],
+      "min": [
+        -1.007841086621378,
+        -1.0078139069033605,
+        -1.0078379871798497
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 14131,
+      "max": [
+        2.3716551184828942,
+        3.8697488514108667,
+        3.1489480656417452
+      ],
+      "min": [
+        -5.035877339247092,
+        -6.677574746015891,
+        -10.366665474775656
+      ],
+      "type": "VEC3"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "eon (https://sketchfab.com/facerate)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/elven-ranger-statue-71aec2d9f7724ae09992435ce8ff7258",
+      "title": "Elven ranger statue"
+    },
+    "generator": "Sketchfab-8.70.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 186436
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 186436,
+      "byteLength": 191976
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 378412,
+      "byteLength": 51964
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "archer_data.bin",
+      "byteLength": 430376
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "material_0",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.6
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 2
+          },
+          "indices": 0,
+          "material": 0,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 0,
+              "attributes": {
+                "NORMAL": 0,
+                "POSITION": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 4,
+            "POSITION": 5
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 1,
+              "attributes": {
+                "NORMAL": 0,
+                "POSITION": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 7,
+            "POSITION": 8
+          },
+          "indices": 6,
+          "material": 0,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 2,
+              "attributes": {
+                "NORMAL": 0,
+                "POSITION": 1
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [
+        -0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        1,
+        8.006836424271825e-33,
+        -1.6081226229577292e-16,
+        0,
+        1.7853747624282703e-32,
+        1,
+        1.6081226229577292e-16,
+        0,
+        1.6081226229577292e-16,
+        -1.6081226229577292e-16,
+        1,
+        0,
+        6.661338147750939e-16,
+        -6.661338147750939e-16,
+        0,
+        1
+      ],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [
+        3,
+        4,
+        5
+      ],
+      "name": "elf.OBJ.cleaner.materialmerger.gles"
+    },
+    {
+      "mesh": 0,
+      "name": ""
+    },
+    {
+      "mesh": 1,
+      "name": ""
+    },
+    {
+      "mesh": 2,
+      "name": ""
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "OSG_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "extensionsRequired": [
+    "KHR_draco_mesh_compression"
+  ],
+  "extensionsUsed": [
+    "KHR_draco_mesh_compression"
+  ]
+}
