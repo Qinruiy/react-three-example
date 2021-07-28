@@ -1,9 +1,7 @@
 import React, { FC, ReactNode, Suspense } from "react";
 import "./App.css";
 import { useRef, HTMLAttributes } from "react";
-import { Vector3 } from "three/src/math/Vector3";
-import { MeshStandardMaterial } from "three/src/materials/MeshStandardMaterial";
-import { Mesh } from "three/src/objects/Mesh";
+import { Mesh, Vector3 } from "three";
 import { Canvas, useFrame } from "@react-three/fiber";
 import {
   Stats,
@@ -12,8 +10,6 @@ import {
   AdaptiveDpr,
   AdaptiveEvents,
 } from "@react-three/drei";
-import archer from "./assets/archer.glb?url";
-import { GLTF } from "three-stdlib";
 
 const App = () => {
   return (
@@ -28,54 +24,18 @@ const App = () => {
 
 export default App;
 
-type GLTFResult = GLTF & {
-  nodes: {
-    mesh_0: Mesh;
-    mesh_1: Mesh;
-    mesh_2: Mesh;
-  };
-  materials: {
-    material_0: MeshStandardMaterial;
-  };
-};
-
 const Archer = () => {
-  const { nodes, materials } = useGLTF(archer, true) as GLTFResult;
+  const { scene } = useGLTF("/archer.glb", true);
 
   const mesh = useRef<Mesh>();
 
   useFrame(() => {
     if (mesh.current) {
-      mesh.current.rotation.z += 0.01;
+      mesh.current.rotation.y += 0.01;
     }
   });
 
-  return (
-    <group dispose={null}>
-      <group rotation={[-Math.PI / 2, 0, 0]}>
-        <group ref={mesh} position={[0, 0, 2]}>
-          <mesh
-            castShadow
-            receiveShadow
-            material={materials.material_0}
-            geometry={nodes.mesh_0.geometry}
-          />
-          <mesh
-            castShadow
-            receiveShadow
-            material={materials.material_0}
-            geometry={nodes.mesh_1.geometry}
-          />
-          <mesh
-            castShadow
-            receiveShadow
-            material={materials.material_0}
-            geometry={nodes.mesh_2.geometry}
-          />
-        </group>
-      </group>
-    </group>
-  );
+  return <primitive ref={mesh} object={scene}></primitive>;
 };
 
 const Three: FC<HTMLAttributes<ReactNode>> = ({ className }) => {
